@@ -8,7 +8,7 @@
 ## To start a project similar to this boilerplate...
 
 1. `npm init electron-app@latest my-electron-app -- --template=webpack`
-2. `npm install --save-dev @babel/preset-react babel-loader @babel-core`
+2. `npm install --save-dev @babel/preset-react babel-loader @babel/core`
 3. Add the following to the `webpack.rules.js` file:
 ```js
 {
