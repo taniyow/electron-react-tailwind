@@ -48,27 +48,29 @@ export default function App() {
 }
 ```
 
-6. To display or undisplay the DevTools, uncomment or comment the following code in the `main.js` file:
+6. Replace `import './index.css';` with `import './index.jsx';` in the `renderer.js` file.
+
+7. To display or undisplay the DevTools, uncomment or comment the following code in the `main.js` file:
 ```js
 // Open the DevTools.
 mainWindow.webContents.openDevTools();
 ```
 
-7. For the built-in menu, set the following code in the `main.js` file:
+8. For the built-in menu, set the following code in the `main.js` file:
 ```js
 autoHideMenuBar: true, // hides the menu bar
 ```
 
-8. `npm install --save-dev tailwindcss postcss autoprefixer`
+9. `npm install --save-dev tailwindcss postcss autoprefixer`
 
-9. `npx tailwindcss init`
+10. `npx tailwindcss init`
 
-10. Add the following to the `tailwind.config.js` file:
+11. Add the following to the `tailwind.config.js` file:
 ```js
 content: ["./src/**/*.{html,js,jsx}"],
 ```
 
-11. Add the postcss-loader in `webpack.renderer.config.js`:
+12. Add the postcss-loader in `webpack.renderer.config.js`:
 ```js
 {
   loader: "postcss-loader",
@@ -80,7 +82,7 @@ content: ["./src/**/*.{html,js,jsx}"],
 },
 ```
 
-12. Add the following to `webpack.rules.js`
+13. Add the following to `webpack.rules.js`
 ```js
 const path = require("path");
 // ...other code
@@ -91,12 +93,12 @@ const path = require("path");
 },
 ```
 
-13. Replace the `index.css` with the Tailwind CSS code:
+14. Replace the `index.css` with the Tailwind CSS code:
 ```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
 
-14. Import `index.css` in the `index.jsx` file:
-15. Run `npm start` to start the development server.
+15. Import `index.css` in the `index.jsx` file:
+16. Run `npm start` to start the development server.
