@@ -61,7 +61,7 @@ mainWindow.webContents.openDevTools();
 autoHideMenuBar: true, // hides the menu bar
 ```
 
-9. `npm install --save-dev tailwindcss postcss autoprefixer`
+9. `npm install --save-dev tailwindcss postcss postcss-loader autoprefixer`
 
 10. `npx tailwindcss init`
 
